@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Zabloing! Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="shortcut icon" href="./img/1YsECwi.png" type="image/png">
+    <style>
+        body, h1 {
+            font-family: "Raleway", sans-serif;
+            color: white;
+            text-shadow: 2px 2px 0px black;
+
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        .container {
+            text-align: center;
+            width: 550px;
+            height: 640px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -275px;
+            margin-top: -320px;
+        }
+
+        .temp {
+            color: yellow;
+            display: inline-block;
+        }
+
+        .flop-image {
+            width: 550px;
+            height: 550px;
+            background: url('img/flop-img/flop.png');
+            background-repeat: no-repeat;
+            margin-left: auto;
+            margin-right: auto;
+            background-size: 550px 550px;
+
+        }
+
+        .bgimg {
+            background-image: url('/img/1510607017676.jpg');
+            min-height: 100%;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .github-link {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            width: auto;
+            position: absolute;
+            font-size: 15px;
+            top: 0px;
+            padding: 14px;
+            padding-left: 42px;
+            right: 0px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body class="bgimg" style="zoom: 1;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            Floppa Weather
+        </div>
+        <div class="container">
+            <div class="w3-display-middle">
+                <h1 id="city"></h1>
+                <h1 class="w3-jumbo w3-animate-top"><span id="location"></span><br /><br /><br /></h1>
+            </div>
+            <div class="flop-image" style="zoom: 0;">
+
+            </div>
+            <div class="w3-display-bottom">
+                <div class="w3-large w3-display-middle temp"><span id="temp"> </span> <br /> <br /> </div>
+            </div>
+            <div class="w3-display-bottom">
+                <div class="w3-large w3-display-middle"> <br /><span id="summary"></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="github-link">
+            Powered by <a href="https://github.com/Pandie-pantsu" target="_blank">poopoo peepee</a>
+    </div>
+</body>
+
+</html>
